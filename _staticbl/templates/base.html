@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  </head>
+
+  <body>
+  <p>
+  {% for k,v in header_links.items() %}
+  	<a href="{{ k }}">{{ v }}</a> / 
+  {% endfor %}
+  </p>
+  {% block content %}{% endblock %}
+  <hr />
+  {% block sidebar %}{% endblock %}
+  </body>
+</html>
