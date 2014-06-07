@@ -41,17 +41,17 @@ settings = {
         '/tags/': u'tags',
     }, 
     'source_path': '_data/',
-    'date_format': "%d.%m.%Y %H:%M",
+    'date_format': "%d-%m-%Y %H:%M",
 }
 
 transl = {u'а': u'a', u'б': u'b', u'в': u'v', u'г': u'g', u'д': u'd', u'е': u'e', u'ё': u'e', u'ж': u'zh', u'з': u'z', u'и': u'i', u'й': u'y', u'к': u'k', u'л': u'l', u'м': u'm', u'н': u'n', u'о': u'o', u'п': u'p', u'р': u'r', u'с': u's', u'т': u't', u'у': u'u', u'ф': u'f', u'х': u'h', u'ц': u'ts', u'ч': u'ch', u'ш': u'sh', u'щ': u'sch', u'ъ': u'', u'ы': u'y', u'ь': u'', u'э': u'e', u'ю': u'yu', u'я': u'ya',}
 
 def gen_slug(title):
-    title = re.sub(ur"([^а-я]+)", u'-', title.lower(), re.UNICODE)
+    title = re.sub(ur"([^а-яa-z]+)", u'-', title.lower(), re.UNICODE)
     for k,v in transl.items():
-        ns = ns.replace(k, v)
-    title = re.sub(ur"(^-|-$)", u'', ns)
-
+        title = title.replace(k, v)
+    title = re.sub(ur"(^-|-$)", u'', title)
+    return title
 
 class Page:
     def __init__(self, src_fname, content):
@@ -150,7 +150,13 @@ class Staticbl:
             insertin into template normal title, 
             filename is a date__slug-title
             and print command to open it or open"""
-        pass
+        dt_str = datetime.now().strftime(settings['date_format'])
+        slug = gen_slug(title)
+        path = settings['source_path'] + '%s__%s.wiki' % (dt_str.split()[0], slug)
+        f = codecs.open(path, 'w', 'utf-8')
+        f.write(u"title: %s\ntags: \ndate: %s" % (title, dt_str))
+        print 'Post created, for editing try:\nvim %s' % path
+        f.close()
 
     def serve(self):
         """ run web-server to test static site """
@@ -165,4 +171,4 @@ if __name__ == "__main__":
     if action == 'serve':
         st.serve()
     elif action == 'post':
-        st.post(sys.argv[2])
+        st.post(unicode(sys.argv[2], 'utf-8'))
