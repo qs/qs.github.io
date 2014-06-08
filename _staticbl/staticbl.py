@@ -36,9 +36,9 @@ settings = {
     'site_name': 'qs.github.io',
     'render_dir': '../',
     'header_links': {
-        '/': u'blog',
-        '/about/': u'about',
-        '/tags/': u'tags',
+        '/': u'posts',
+        'https://github.com/qs': u'github',
+        '/info/': u'info',
     }, 
     'source_path': '_data/',
     'date_format': "%d-%m-%Y %H:%M",
