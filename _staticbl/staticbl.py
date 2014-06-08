@@ -38,7 +38,7 @@ settings = {
     'header_links': {
         '/': u'posts',
         'https://github.com/qs': u'github',
-        '/info/': u'info',
+        '/info.html': u'info',
     }, 
     'source_path': '_data/',
     'date_format': "%d-%m-%Y %H:%M",
