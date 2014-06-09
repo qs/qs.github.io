@@ -12,26 +12,6 @@ from creole import HtmlEmitter
 
 logging.basicConfig(format = u'%(filename)s[LINE:%(lineno)d]# %(levelname)-8s [%(asctime)s]  %(message)s', level = logging.DEBUG)
 
-data = """
-==== Helloo ====
-
-* ff
-* fff
-
-|= |= fff |= ddd |
-| s | aaa | fe |
-| a | ddd | www |
-
-tpl_file = 'index'
-tpl = jinja_environment.get_template('templates/' + tpl_file + '.html')
-f = open('page.html', 'w')
-html_page = tpl.render({'lol': 'ddddd', 'page': page})
-f.write(html_page)
-f.close()
-
-"""
-
-
 settings = {
     'site_name': 'qs.github.io',
     'render_dir': '../',
@@ -160,7 +140,14 @@ class Staticbl:
 
     def serve(self):
         """ run web-server to test static site """
-        pass
+        import SimpleHTTPServer
+        import BaseHTTPServer
+        os.chdir(settings["render_dir"])
+        server_addr = ('localhost', 8000)
+        request_handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+        httpd = BaseHTTPServer.HTTPServer (server_addr, request_handler)
+        httpd.serve_forever()
+
 
 if __name__ == "__main__":
     action = sys.argv[1]
