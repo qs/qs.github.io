@@ -119,7 +119,9 @@ class Staticbl:
                         tags[t] = [p, ]
         # post list (main)
         logging.debug( u'Generating index page')
-        self._render_file('index.html', 'index', {'pages': [p for p in pages if p.is_blog_page()]})
+        pages = [p for p in pages if p.is_blog_page()]
+        pages = sorted(pages, key=lambda x: x.meta['date'], reverse=True)
+        self._render_file('index.html', 'index', {'pages': pages})
         # tag list
         logging.debug( u'Generating tags top' )
         tags_cnt = [(k, len(v)) for k,v in tags.items()]
@@ -128,6 +130,7 @@ class Staticbl:
         # tag filters
         for tag, tag_pages in tags.items():
             logging.debug( u'Generating tag page: %s with %s pages' % (tag, len(tag_pages)) )
+            tag_pages = sorted(tag_pages, key=lambda x: x.meta['date'], reverse=True)
             self._render_file('tag/%s.html' % tag, 'tag', {'pages': tag_pages, 'tag': tag})
         # rss
 
