@@ -19,6 +19,7 @@ settings = {
         '/': u'posts',
         'https://github.com/qs': u'github',
         '/info.html': u'info',
+        '/tags.html': u'top tags',
     }, 
     'source_path': '_data/',
     'date_format': "%d-%m-%Y %H:%M",
@@ -50,7 +51,7 @@ class Page:
     def parse_meta_data(self):
         meta_funcs = {
             'title': lambda x: x,
-            'tags': lambda x: x.split(', '),
+            'tags': lambda x: x.replace(' ', '').split(','),
             'date': lambda x: datetime.strptime(x, settings['date_format']),
         }
         for name, func_val in meta_funcs.items():
@@ -119,6 +120,11 @@ class Staticbl:
         # post list (main)
         logging.debug( u'Generating index page')
         self._render_file('index.html', 'index', {'pages': [p for p in pages if p.is_blog_page()]})
+        # tag list
+        logging.debug( u'Generating tags top' )
+        tags_cnt = [(k, len(v)) for k,v in tags.items()]
+        top_tags = sorted(tags_cnt, key=lambda x: x[1], reverse=True)
+        self._render_file('tags.html', 'tags', {'tags': top_tags})
         # tag filters
         for tag, tag_pages in tags.items():
             logging.debug( u'Generating tag page: %s with %s pages' % (tag, len(tag_pages)) )
