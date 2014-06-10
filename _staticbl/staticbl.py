@@ -10,15 +10,20 @@ import codecs
 from creole import CreoleParser
 from creole import HtmlEmitter
 
+import PyRSS2Gen
+
+
 logging.basicConfig(format = u'%(filename)s[LINE:%(lineno)d]# %(levelname)-8s [%(asctime)s]  %(message)s', level = logging.DEBUG)
 
 settings = {
-    'site_name': 'qs.github.io',
+    'site_name': 'qs notes',
+    'site_url': 'http://qs.github.io',
     'render_dir': '../',
     'header_links': {
         '/': u'posts',
         '/info.html': u'info',
         '/tags.html': u'top tags',
+        '/rss.xml': u'rss',
     }, 
     'source_path': '_data/',
     'date_format': "%d-%m-%Y %H:%M",
@@ -40,6 +45,7 @@ class Page:
         self.fname = src_fname.split('__')[-1]
         self.meta = {'title': u'', 'tags': []}
         self.parse_meta_data()
+        self.content_html = self.render_html()
 
     def is_blog_page(self):
         if re.match(ur"[0-9]{2}\-[0-9]{2}\-[0-9]{4}/.*", self.path):
@@ -106,7 +112,7 @@ class Staticbl:
         logging.info( u'Total pages: %s' % len(pages) )
         for p in pages:
             tvars = p.meta
-            tvars['content'] = p.render_html()
+            tvars['content'] = p.content_html
             logging.debug( u'Generating page: %s ' % p.path )
             self._render_file(p.path, 'page', tvars)
             # also aggreagate tags
@@ -131,7 +137,25 @@ class Staticbl:
             logging.debug( u'Generating tag page: %s with %s pages' % (tag, len(tag_pages)) )
             tag_pages = sorted(tag_pages, key=lambda x: x.meta['date'], reverse=True)
             self._render_file('tag/%s.html' % tag, 'tag', {'pages': tag_pages, 'tag': tag})
-        # rss
+        # rss for latest 40 items
+        items = []
+        for p in pages:
+            item = PyRSS2Gen.RSSItem(
+                    title=p.meta['title'], 
+                    link=settings['site_url'] + p.path, 
+                    description=p.content_html, 
+                    guid=PyRSS2Gen.Guid(settings['site_url'] + p.path), 
+                    pubDate=p.meta['date'])
+            items.append(item)
+        rss = PyRSS2Gen.RSS2(
+                title=settings['site_name'],
+                link=settings['site_url'],
+                description='',
+                lastBuildDate = datetime.now(),
+                items=items)
+        rss_file = open(settings['render_dir'] + "rss.xml", "w")
+        rss.write_xml(rss_file)
+        rss_file.close()
 
     def post(self, title):
         """ create a new file with template content 
