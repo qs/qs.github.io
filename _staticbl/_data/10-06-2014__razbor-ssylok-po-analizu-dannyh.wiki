@@ -26,7 +26,35 @@ date: 10-06-2014 01:47
 
 [[https://medium.com/data-science-analytics/building-data-science-teams-f06352dcada8|Building Data Science Teams]]
 Нужны:
-* Data evangelist
-* Contextual analyst
-* Data visualizer
+* Data evangelist - выясняет потребности клиента, находит применение данным
+* Contextual analyst - работает над качеством продукта, необязательно программист
+* Data visualizer - думает, как представить результаты контекстного аналитика конечному пользователю
 
+[[http://www.datasciencecentral.com/profiles/blogs/continuing-along-the-path-of-data-science?xg_source=activity|Развитие в анализе данных]] - советы, как развиться в анализе данных
+* Для начала нужно хорошо выучить какой-нибудь язык программирования (Python) и SQL
+* Быть в курсе новых технологий работы с данными.
+* Ходить на встречи, конференции, хакатоны.
+* Практиковаться. Есть большая разница между курсовыми в MOOC и анализом реальных данных.
+* При самостоятельной работе обычно нет четкого момента ее завершения.
+
+
+[[https://bigml.com|BigML]] - инструмент для анализа данных
+
+[[http://www.r-bloggers.com/statistical-language-wars-the-infograph/|Инфографика по языкам анализа данных]] - 50% победителей Kaggle пользуются R. Им же пользуются Google и Facebook.
+
+[[http://www.analyticsvidhya.com/blog/2014/06/books-data-scientists-or-aspiring-ones/|Книги, которые нужно прочитать]]
+* R Cookbook by Paul Teetor
+* Machine Learning for Hackers by Drew Conway & John Myles White
+* R graphics cookbook by Winston Chang
+* Programming Collective Intelligence by Toby Segaran - читал.
+* Python for Data Analysis by Wes McKinney
+* Agile data science by Russell Jurney - клёвое название
+* Natural Language processing with Python by Steven Bird et al
+* Mining the social web by Matthew A. Russell - немного читал, простая, на конкретных примерах
+(нужно составить список книг, которые хорошо бы прочитать)
+
+[[http://www.rdatamining.com/tutorials/r-hadoop-setup-guide|Пошаговое руководство по настройке R-Hadoop]]
+
+[[http://rs.io/2014/05/29/list-of-data-sets.html|Наборы данных]] - около сотни, есть те, которые были в конкурсах на Kaggle.
+
+[[http://www.datasciencecentral.com/profiles/blogs/acronyms-of-big-data-analytics-from-a-to-z?xg_source=activity|Аббревиатуры в анализе данных]]
