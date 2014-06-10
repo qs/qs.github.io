@@ -17,7 +17,6 @@ settings = {
     'render_dir': '../',
     'header_links': {
         '/': u'posts',
-        'https://github.com/qs': u'github',
         '/info.html': u'info',
         '/tags.html': u'top tags',
     }, 
