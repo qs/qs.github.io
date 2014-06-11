@@ -19,12 +19,6 @@ settings = {
     'site_name': 'qs notes',
     'site_url': 'http://qs.github.io',
     'render_dir': '../',
-    'header_links': {
-        '/': u'posts',
-        '/info.html': u'info',
-        '/tags.html': u'top tags',
-        '/rss.xml': u'rss',
-    }, 
     'source_path': '_data/',
     'date_format': "%d-%m-%Y %H:%M",
 }
@@ -91,7 +85,6 @@ class Staticbl:
             os.makedirs(dirpath)
         with codecs.open(path, 'w', 'utf-8') as outfile:
             tpl = self.jinja_env.get_template('templates/' + tpl_file + '.html')
-            tvars['header_links'] = settings['header_links']
             tvars['site_name'] = settings['site_name']
             tvars['date_format'] = settings['date_format']
             html_page = tpl.render(tvars)
