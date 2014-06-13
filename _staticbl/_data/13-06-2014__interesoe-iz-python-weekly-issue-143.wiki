@@ -1,0 +1,9 @@
+title: Интересое из Python Weekly - Issue 143
+tags: python, nosql
+date: 13-06-2014 16:28
+
+[[http://crossbar.io/|crossbar.io]] - для распределенных многопользовательских веб-приложений. Использует Twisted и [[https://github.com/tavendo/AutobahnPython|Autobahn]]. Короче штука для WAMP.
+
+[[http://labs.ideo.com/2014/06/04/painting-with-code/|Генеративаное искусство]] - рассказывают про [[http://nodebox.net/code/index.php/Cornu|NodeBox]] - рисовалку алгоритмами для Mac OS X, которая спользует питон.
+
+[[https://github.com/torque59/Nosql-Exploitation-Framework|NoSQL Scanning and Exploitation Framework]] - для Mongo, Couch, Redis, HBase, Cassandra
