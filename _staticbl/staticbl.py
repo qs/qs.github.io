@@ -16,7 +16,7 @@ import PyRSS2Gen
 logging.basicConfig(format = u'%(filename)s[LINE:%(lineno)d]# %(levelname)-8s [%(asctime)s]  %(message)s', level = logging.DEBUG)
 
 settings = {
-    'site_name': 'qs notes',
+    'site_name': u'qs.github.io',
     'site_url': 'http://qs.github.io',
     'render_dir': '../',
     'source_path': '_data/',
