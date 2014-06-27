@@ -4,10 +4,10 @@ date: 23-06-2014 00:24
 
 Разбор ссылок http://habrahabr.ru/post/227135/
 * The First Law of Data Science: Correlation does not imply causation. 
-* [[http://machinelearningmastery.com/machine-learning-for-money/|Как заработать на машинном обучении]] - надстройки, анализирующие данные из агрегаторов (например [[kissmetrics.com|KissMetrics]] анализирует данные из Google Analytics); финансы и азартные игры (разве что в мморпг, где ниша еще не занята), сайты с соревнованиями: [[http://www.kaggle.com/|Kaggle]], [[https://challenge.gov|Challenge.gov]] (тут наверняка нужно быть гражданином), [[http://www.innocentive.com/|Innocentive]], [[http://tunedit.org/|Tunedit]]
+* [[http://machinelearningmastery.com/machine-learning-for-money/|Как заработать на машинном обучении]] - надстройки, анализирующие данные из агрегаторов (например [[http://kissmetrics.com|KissMetrics]]); финансы и азартные игры (разве что в мморпг, где ниша еще не занята), сайты с соревнованиями: [[http://www.kaggle.com/|Kaggle]], [[https://challenge.gov|Challenge.gov]] (тут наверняка нужно быть гражданином), [[http://www.innocentive.com/|Innocentive]], [[http://tunedit.org/|Tunedit]]
 * [[http://nerds.airbnb.com/architecting-machine-learning-system-risk/|Architecting a Machine Learning System for Risk]] - предлагают использовать [[https://github.com/jpmml/openscoring|Openscoring]] для работы с [[http://ru.wikipedia.org/wiki/%D0%AF%D0%B7%D1%8B%D0%BA_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F|PMML]]; "ground truth > features > algorithm choice"
 * [[http://machinelearningmastery.com/how-i-got-started-in-machine-learning/|How I Got Started In Machine Learning]]
-* [[http://www.cleveralgorithms.com/nature-inspired/index.html|Clever Algorithms: Nature-Inspired Programming Recipes]] - книжа по ИИ
+* [[http://www.cleveralgorithms.com/nature-inspired/index.html|Clever Algorithms: Nature-Inspired Programming Recipes]] - книжка по ИИ
 
 Данные:
 * [[http://en.wikipedia.org/wiki/Wikipedia:Database_download|Wikipedia:Database]] - дабпы статей википедии.
