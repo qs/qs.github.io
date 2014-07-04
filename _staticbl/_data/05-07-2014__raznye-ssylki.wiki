@@ -1,0 +1,19 @@
+title: Разные ссылки
+tags: lists, gamedev, github, python, django
+date: 05-07-2014 02:37
+
+* [[http://www.quora.com/Billionaires/I-want-to-be-a-billionaire-in-2-years-how-can-I-plan-that|Как сать миллионером за два года]] - вопрос на quora. Калькуляция, мотивация, петросянство.
+* [[http://metaoptimize.com/qa/questions/3163/good-machine-learning-blogs|Good Machine Learning Blogs]] - нужно добавить в rss
+* [[http://web.appstorm.net/roundups/100-web-apps-to-rule-them-all/|111 Web Apps to Rule Them All]] - интересные веб-приложения. В комментариях еще.
+* [[http://www.pixelprospector.com/the-big-list-of-postmortems/|collection of postmortems by indie developers and AAA studios]] - истории создания игр
+
+Интересные проекты на гитхабе:
+* [[https://github.com/search?l=Python&p=2&q=stars%3A%3E300&ref=advsearch&type=Repositories|Python stars:>300]] - фильтр популярных проектов на питоне.
+* [[https://github.com/vinta/awesome-python|Awesome Python]] - подборка фреймворков под разные нужды
+* [[https://github.com/kahun/awesome-sysadmin|Awesome Sysadmin]] - подборка инструментов для администрирования
+* [[https://github.com/karan/Projects|Mega Project List]] - список типичных проектов, если нет вдохновения и идей. [[https://github.com/karan/Projects-Solutions|Примеры решений]]
+* [[https://github.com/sahat/hackathon-starter|Hackathon Starter Node.js]] - нужно сделать отдельно подборку starter kits
+
+Starter kits:
+* [[https://github.com/pablomouzo/Django-Starter-Kit|Django Starter Kit]] - virtualenv, gitignore, sphinx, docstrings
+* [[https://github.com/talwai/django-angular-starter|Django + AngluarJS starter kit]] - хорошо бы слить с предыдущим
