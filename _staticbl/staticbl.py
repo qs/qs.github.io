@@ -104,27 +104,31 @@ class Staticbl:
                 if os.path.isfile(settings['source_path'] + i)]
         logging.info( u'Total pages: %s' % len(pages) )
         for p in pages:
-            tvars = p.meta
-            tvars['content'] = p.content_html
-            logging.debug( u'Generating page: %s ' % p.path )
-            self._render_file(p.path, 'page', tvars)
-            # also aggreagate tags
+            # aggreagate tags
             for t in p.meta['tags']:
                 if p.is_blog_page():
                     if t in tags:
                         tags[t].append(p)
                     else:
                         tags[t] = [p, ]
-        # post list (main)
-        logging.debug( u'Generating index page')
-        pages = [p for p in pages if p.is_blog_page()]
-        pages = sorted(pages, key=lambda x: x.meta['date'], reverse=True)
-        self._render_file('index.html', 'index', {'pages': pages})
         # tag list
         logging.debug( u'Generating tags top' )
         tags_cnt = [(k, len(v)) for k,v in tags.items()]
         top_tags = sorted(tags_cnt, key=lambda x: x[1], reverse=True)
-        self._render_file('tags.html', 'tags', {'tags': top_tags})
+        #self._render_file('tags.html', 'tags', {'tags': top_tags})
+        # post list (main)
+        logging.debug( u'Generating index page')
+        pages = [p for p in pages if p.is_blog_page()]
+        pages = sorted(pages, key=lambda x: x.meta['date'], reverse=True)
+        self._render_file('index.html', 'index', {'pages': pages, 'tags': top_tags})
+        # pages with tags top
+        for p in pages:
+            tvars = p.meta
+            tvars['content'] = p.content_html
+            tvars['page_tags'] = tvars['tags']
+            tvars['tags'] = top_tags
+            logging.debug( u'Generating page: %s ' % p.path )
+            self._render_file(p.path, 'page', tvars)
         # tag filters
         for tag, tag_pages in tags.items():
             logging.debug( u'Generating tag page: %s with %s pages' % (tag, len(tag_pages)) )

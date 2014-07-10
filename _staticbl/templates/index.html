@@ -7,7 +7,7 @@
 
 <ul>
 {% for p in pages %}
-	<li><a href="/{{ p.path }}">{{ p.meta['title'] }}</a> {{ p.meta['date'].strftime('%d-%m-%Y %H:%M') }} </li>
+	<li><a href="/{{ p.path }}">{{ p.meta['title'] }}</a> <small>{{ p.meta['date'].strftime('%d-%m-%Y %H:%M') }}</small> </li>
 {% endfor %}
 </ul>
 

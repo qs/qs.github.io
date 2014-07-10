@@ -9,10 +9,11 @@
 
 {% if tags %}
 tags:
-{% for t in tags %}
+{% for t in page_tags %}
 	<a href="/tag/{{ t }}.html">{{ t }}</a> 
 {% endfor %}
 {% endif %}
+{% if date %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -26,4 +27,6 @@ tags:
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endif %}
+
 {% endblock %}

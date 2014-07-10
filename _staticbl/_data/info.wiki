@@ -1,8 +1,0 @@
-title: Ифнормация
-
-Занимаюсь разработкой на Python. 
-
-Интересуюсь анализом данных, процессом разработки и продуктивностью.
-
-* github: [[https://github.com/qs|qs]]
-* delicious: [[https://delicious.com/qsdev|qsdev]]
