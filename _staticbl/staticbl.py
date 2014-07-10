@@ -133,7 +133,7 @@ class Staticbl:
         for tag, tag_pages in tags.items():
             logging.debug( u'Generating tag page: %s with %s pages' % (tag, len(tag_pages)) )
             tag_pages = sorted(tag_pages, key=lambda x: x.meta['date'], reverse=True)
-            self._render_file('tag/%s.html' % tag, 'tag', {'pages': tag_pages, 'tag': tag})
+            self._render_file('tag/%s.html' % tag, 'tag', {'pages': tag_pages, 'tag': tag, 'tags': top_tags})
         # rss for latest 40 items
         items = []
         for p in pages:
