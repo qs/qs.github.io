@@ -1,0 +1,32 @@
+title: Decision Tree, Random Forest + AdaBoost
+tags: data-mining
+date: 03-08-2014 21:22
+
+Нужно описать кратко принципы работы Decision Tree и Random Forest в совокупности с AdaBoost.
+
+====Деревья приятния решений
+
+TL;DR: Строится дерево проверок, в самой вершине - та, что наибольшим образом снижает неопределенность класса.
+
+
+====Случайный лес
+
+TL;DR: Испольуется куча деревьев.
+
+Встроенная оценка качества.
+
+Недостатки:
+
+* склонен к переобучению на некоторых задачах, особенно на зашумленных
+* большой размер получающихся моделей
+
+
+====Adaptive Boosting
+
+TL;DR:
+
+
+====Ссылки:
+* [[http://habrahabr.ru/post/80323/|Adaptive boosting // habr]]
+* [[http://www.machinelearning.ru/wiki/index.php?title=AdaBoost|Алгоритм AdaBoost // machinelearning.ru]]
+* [[http://habrahabr.ru/post/215453/|Модель Random Forest для классификации, реализация на c# //habr]]

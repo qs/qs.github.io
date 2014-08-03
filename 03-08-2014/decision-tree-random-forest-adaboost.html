@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>qs.github.io Интересое из Python Weekly - Issue 143</title>
+    <title>qs.github.io Decision Tree, Random Forest + AdaBoost</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,20 +46,41 @@
 
     <div class="col-md-6 col-md-offset-1 well">
       
-<h2>Интересое из Python Weekly - Issue 143</h2>
-<small>13-06-2014 16:28</small>
-<p><a href="http://crossbar.io/">crossbar.io</a> - для распределенных многопользовательских веб-приложений. Использует Twisted и <a href="https://github.com/tavendo/AutobahnPython">Autobahn</a>. Короче штука для WAMP.</p>
+<h2>Decision Tree, Random Forest + AdaBoost</h2>
+<small>03-08-2014 21:22</small>
+<p>Нужно описать кратко принципы работы Decision Tree и Random Forest в совокупности с AdaBoost.</p>
 
-<p><a href="http://labs.ideo.com/2014/06/04/painting-with-code/">Генеративаное искусство</a> - рассказывают про <a href="http://nodebox.net/code/index.php/Cornu">NodeBox</a> - рисовалку алгоритмами для Mac OS X, которая спользует питон.</p>
+<h4>Деревья приятния решений</h4>
 
-<p><a href="https://github.com/torque59/Nosql-Exploitation-Framework">NoSQL Scanning and Exploitation Framework</a> - для Mongo, Couch, Redis, HBase, Cassandra</p>
+<p>TL;DR: Строится дерево проверок, в самой вершине - та, что наибольшим образом снижает неопределенность класса.</p>
+
+<h4>Случайный лес</h4>
+
+<p>TL;DR: Испольуется куча деревьев.</p>
+
+<p>Встроенная оценка качества.</p>
+
+<p>Недостатки:</p>
+
+<ul>
+	<li>склонен к переобучению на некоторых задачах, особенно на зашумленных</li>
+	<li>большой размер получающихся моделей</li>
+</ul>
+<h4>Adaptive Boosting</h4>
+
+<p>TL;DR:</p>
+
+<h4>Ссылки:</h4>
+<ul>
+	<li><a href="http://habrahabr.ru/post/80323/">Adaptive boosting // habr</a></li>
+	<li><a href="http://www.machinelearning.ru/wiki/index.php?title=AdaBoost">Алгоритм AdaBoost // machinelearning.ru</a></li>
+	<li><a href="http://habrahabr.ru/post/215453/">Модель Random Forest для классификации, реализация на c# //habr</a></li>
+</ul>
 
 
 tags:
 
-	<a href="/tag/python.html">python</a> 
-
-	<a href="/tag/nosql.html">nosql</a> 
+	<a href="/tag/data-mining.html">data-mining</a> 
 
 
 
