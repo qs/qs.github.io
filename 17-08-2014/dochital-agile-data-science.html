@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>qs.github.io Разбор ссылок по анализу данных</title>
+    <title>qs.github.io Дочитал Agile Data Science</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,30 +46,34 @@
 
     <div class="col-md-6 col-md-offset-1 well">
       
-<h2>Разбор ссылок по анализу данных</h2>
-<small>22-06-2014 04:42</small>
-<p>Интересные ссылки из дайджеста <a href="http://habrahabr.ru/post/226641/">http://habrahabr.ru/post/226641/</a></p>
+<h2>Дочитал Agile Data Science</h2>
+<small>17-08-2014 23:33</small>
+<p>Небольшая книжка с кучей кода на Pig. На примере анализа писем с почты рассказывает, как лучше построить инфраструктуру для анализа и в целом про весь цикл разработки проекта.</p>
 
+<p>Использует:</p>
 <ul>
-	<li><a href="http://www.datasciencecentral.com/profiles/blogs/data-science-summer-reading-list-2014">Книги по анализу данных</a> - не про СПО пока мимо.
-	<ul>
-		<li><a href="http://it-ebooks.info/book/3086/">Agile Data Science: Building Data Analytics Applications with Hadoop</a> - всё agile, судя по содержанию простой уровень, помимо хадупа куча привычных свободных средств.</li>
-		<li><a href="http://it-ebooks.info/book/666/">Machine Learning for Hackers</a> - (book_id=666!) - R, спам-фильтр, priority box, прогноз просмотра страниц, рекомендации на kNN, рекомендации по социальному графу, SVM.</li>
-		<li><a href="http://www.amazon.com/dp/1594205655">Social Physics: How Good Ideas Spread</a> - должно быть интересно, не нашел pdf, и тут тоже название клевое: <a href="http://www.amazon.com/dp/B00DMCW3N0/">The Naked Future: What Happens in a World That Anticipates Your Every Move?</a></li>
-		<li><a href="http://www.amazon.com/dp/1118810082">Developing Analytic Talent: Becoming a Data Scientist</a> - судя по <a href="http://download.e-bookshelf.de/download/0002/3454/50/L-G-0002345450-0003216126.pdf">содержанию</a> интересный гайд.</li>
-		<li><a href="http://www.amazon.com/dp/3659517542">Anomaly detection technique for sequential data</a> - тоже не нашел pdf.</li>
-		<li><a href="http://it-ebooks.info/book/1041/">Python for Data Analysis</a> - NumPy</li>
-	</ul></li>
-	<li><a href="http://www.kdnuggets.com/2014/06/huge-big-data-poster.html">Huge Big Data Poster and Reference</a> - Свободные инструменты: визуализация: D3js, 3js, Gephi, Ozone; анализ: R, Mahout, Titan, OpenCV, Lumify, Hive, Pig, <a href="http://spark.apache.org/docs/latest/quick-start.html">Spark</a>; хранение: HDFS, Accumulo, MongoDB, Cassandra, Titan, Neo4j, MySQL; подготовка (ingest): <a href="http://habrahabr.ru/post/128808/">Storm</a>, Hadoop/MapReduce; инфрастуктура: Linux, OpenShiW, OpenStack, Puppet, Zookeeper, Oozie, HDFS, KaZa, JBoss, Xymon (здесь почти ничего не знаю).</li>
+	<li>Apache Avro - для сериализации писем и сохранения в HDFS</li>
+	<li>HDFS чтобы хранить необработанные данные</li>
+	<li>Apache Pig - для работы скриптов, которые что-нибудь дополнительно вычисляют во время обработки данных и записывают в БД</li>
+	<li>MongoDB - для хранения данных</li>
+	<li>Python Flask - для сайта, на котором можно посмотреть данные и результаты анализа</li>
+	<li>D3 - для визуализации статистики</li>
 </ul>
-<p>Еще списки ссылок: </p>
+<p>Процессы, через которые проходят данные:</p>
 <ul>
-	<li><a href="http://www.datasciencecentral.com/profiles/blogs/comprehensive-list-of-data-science-resources">http://www.datasciencecentral.com/profiles/blogs/comprehensive-list-of-data-science-resources</a></li>
-	<li><a href="http://www.datasciencecentral.com/profiles/blogs/another-set-of-great-articles-and-resources-mostly-external">http://www.datasciencecentral.com/profiles/blogs/another-set-of-great-articles-and-resources-mostly-external</a></li>
+	<li>Events - события (система, из которой берутся данные)</li>
+	<li>Collectors - агрегаторы событий</li>
+	<li>Bulk storage - хранилище для данных с параллельным доступом</li>
+	<li>Distributed document stores - хранилище для структурированных обработанных данных</li>
+	<li>Application server - веб-сервер для того, чтобы работать с данными</li>
+	<li>Browser - построенная на этом веб-сервере система непосредственно для просмотра результатов анализа и данных</li>
 </ul>
+<p>В книжне не понравилось: слишком много (в том числе повторяющегося) кода, который все равно есть на гитхабе автора, тексты часто просто вода, которой и так в книжке немного.</p>
 
 
 tags:
+
+	<a href="/tag/books.html">books</a> 
 
 	<a href="/tag/data-mining.html">data-mining</a> 
 
