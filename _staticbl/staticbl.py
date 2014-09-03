@@ -50,7 +50,7 @@ class Page:
     def parse_meta_data(self):
         meta_funcs = {
             'title': lambda x: x,
-            'tags': lambda x: x.replace(' ', '').split(','),
+            'tags': lambda x: [i for i in x.replace(' ', '').split(',') if i],
             'date': lambda x: datetime.strptime(x, settings['date_format']),
         }
         for name, func_val in meta_funcs.items():
