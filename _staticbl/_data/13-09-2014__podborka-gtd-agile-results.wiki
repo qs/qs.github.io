@@ -1,0 +1,11 @@
+title: Подборка GTD / Agile Results
+tags: digest, agile
+date: 13-09-2014 22:13
+
+Подборка интересных мне материалов по личной эффективности.
+
+* [[http://betteri.ru/post/agile-results---novyy-podhod-k-lichnoy-effektivnosti-opisanie-osnovnyh-priemov-i-principov.html|Agile Results]] - основы методологии
+* [[http://habrahabr.ru/post/149878/|GTD vs Agile Results. Исправляем недочёты Дэвида Аллена]] - статья на хабре
+* [[http://gettingresults.com/wiki/Getting_Started_with_Agile_Results|Getting Started with Agile Results]] - и в целом вики по Agile Results
+* [[http://betteri.ru/post/nemnogo-mysley-ob-agile-results-besplatnyy-perevod-mini-knigi-j-d-meier-30-days-of-getting-results.html|Немного мыслей об Agile Results]] - вообще на betteri.ru довольно много впечатлений попробовавщих
+* [[http://synderesis.ru/2013/05/perevod-knigi-dzhej-di-mejera-30-dnej-dostizheniya-rezultatov/|30 дней достижения результатов]] - книжка по Agile Results
