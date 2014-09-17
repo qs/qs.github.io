@@ -1,0 +1,11 @@
+title: Выделение сообществ по графу
+tags: kaggle, data mining
+date: 18-09-2014 02:39
+
+Материалы по решению задачи на кеггл [[http://www.kaggle.com/c/learning-social-circles|Learning Social Circles in Networks]], в которой нужно распределить друзей пользователя по кругам.
+
+===Community detection in graphs===
+[[http://arxiv.org/pdf/0906.0612.pdf|pdf]]
+
+===Survey on Social Community Detection===
+[[http://hal.archives-ouvertes.fr/docs/00/80/42/34/PDF/Survey-on-Social-Community-Detection-V2.pdf|pdf]]
