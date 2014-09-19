@@ -25,4 +25,4 @@ date: 18-09-2014 02:39
 ===Ссылки===
 * [[http://posp.raai.org/data/posp2011/kuznetsov.pdf|Решетки формальных понятий в современных методах анализа и разработки данных]] - презентация
 * [[https://pypi.python.org/pypi/concepts/0.5|concepts 0.5]] - Formal Concept Analysis with Python модуль
-* [[http://stackoverflow.com/a/10461375|Using hypergraphs in pygraph]] - пример на stackoverflow
+* [[http://stackoverflow.com/questions/9658373/using-hypergraphs-in-pygraph-need-verification-that-example-is-correct|Using hypergraphs in pygraph]] - пример на stackoverflow
