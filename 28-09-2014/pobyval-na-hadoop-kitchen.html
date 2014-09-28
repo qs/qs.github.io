@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>qs.github.io Первый пост. Планы и интересные ссылки</title>
+    <title>qs.github.io Побывал на Hadoop Kitchen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,25 +46,35 @@
 
     <div class="col-md-6 col-md-offset-1 well">
       
-<h2>Первый пост. Планы и интересные ссылки</h2>
-<small>09-06-2014 02:25</small>
-<p>Нужно доделать:</p>
+<h2>Побывал на Hadoop Kitchen</h2>
+<small>28-09-2014 03:17</small>
+<p>Интересное мероприятие, чуть лучше стал разбираться в вещах связанных с хадупом и альтернативах.</p>
+
 <ul>
-	<li><a href="https://github.com/qs/qs.github.io">Staticbl</a> - этот статичный блог. Нужно добавить запуск локального сервера, описание того, что есть, как с этим работать, и тесты.</li>
-	<li><a href="https://github.com/qs/vypolni">Vypolni</a> - последняя попытка сделать некоторый удобный мне таск-менеджер. Отвлекался от его писания. Посмотреть, что уже есть, доделать и тоже попробовать покрыть тестами.</li>
+	<li>В Hadoop 2 (<a href="http://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/YARN.html">YARN</a>) ноды распределяют между собой роли динамически: как если бы это была проектная работа с руководителем, который за всем следит. Вообще, чем дальше, тем все проще и казуальнее. Переезд с первой версии теоритически несложен, есть коммерческие реализации, позволяющие работать с обеими версиями хадупа.</li>
+	<li>Для прототипа или несложного приложения пойдет <a href="http://hadoop.apache.org/docs/r1.2.1/streaming.html">Hadoop Streaming</a>. Позволяет писать приложения на чем угодно, используя stdin и stdout</li>
+	<li>Для изменяемых форматов данных лучше использовать Avro (сериализует в json) и писать к нему скрипты на чем угодно и/или Parquet (формат близкий к Protocol Buffers от Google) и писать на Java или C++.</li>
 </ul>
-<p>Интересные ссылки, которые нужно посмотреть и выделить полезное:</p>
+<p>Интересные проекты и особенности:</p>
 <ul>
-	<li><a href="http://habrahabr.ru/post/225589/">Дайджест статей по анализу данных №2</a> - на хабре стали еженедельно публиковать, интересно разобрать ссылки.</li>
-	<li><a href="http://www.sicpers.info/2013/04/rebooting-the-programmer-competency-matrix/comment-page-1/">Rebooting the Programmer Competency Matrix</a> - хочу оценить себя по этой матрице и по классической версии.</li>
+	<li>Apache Solr - полнотекстовый поиск, динамическая кластеризация, есть JSON API</li>
+	<li>Apache Spark - для обработки данных, написан на Scala (как и Kafka), более быстрый мапредьюс; можно писать скрипты на Scala, Java, Python;</li>
+	<li>Apache Storm - для вычислений в реальном времени, функциональность пересекается со Spark и Hadoop.</li>
+	<li>Apache Hive - позволяет писать запросы к HDFS на HiveQL (почти SQL)</li>
+	<li>Cloudera Impala - то же самое, но быстрее</li>
+	<li>Apache HBase - база данных семейство столбцов и синтаксис аналогичный SQL, очевидцы говорят, что сложна в эксплуатации.</li>
+</ul>
+<p>Попутно нашел интересным:</p>
+<ul>
+	<li><a href="http://zenfractal.com/2013/08/21/a-powerful-big-data-trio/">A Powerful Big Data Trio: Spark, Parquet and Avro</a></li>
+	<li><a href="https://spark.apache.org/docs/latest/programming-guide.html">Spark Programming Guide</a></li>
+	<li><a href="http://habrahabr.ru/post/186208/">Изучаем Storm Framework. Часть I</a></li>
 </ul>
 
 
 tags:
 
-	<a href="/tag/python.html">python</a> 
-
-	<a href="/tag/data-mining.html">data-mining</a> 
+	<a href="/tag/hadoop.html">hadoop</a> 
 
 
 
