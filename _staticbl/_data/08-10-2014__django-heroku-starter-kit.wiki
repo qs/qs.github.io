@@ -1,0 +1,13 @@
+title: Django Heroku starter kit
+tags: python, django
+date: 08-10-2014 02:37
+
+Placeholder
+
+Здесь будет инструкция, как сделать следующий набор штуковин работающим вместе:
+* Heroku
+* Django
+* MongoDB
+* python-social-auth
+
+Работающих актуальных гайдов на данный момент нет.
