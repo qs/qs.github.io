@@ -11,3 +11,30 @@ Placeholder
 * python-social-auth
 
 Работающих актуальных гайдов на данный момент нет.
+
+Базовая установка с PostgreSQL:
+
+pip install django-toolbelt
+django-admin.py startproject project .
+
+Конфиги:
+echo "web: gunicorn project.wsgi --log-file -" > Procfile
+pip freeze > requirements.txt
+
+vim .gitignore
+venv
+*.pyc
+staticfiles
+
+
+vim wsgi.py
+from django.core.wsgi import get_wsgi_application
+from dj_static import Cling
+
+application = Cling(get_wsgi_application())
+
+git init
+git remote add heroku git@heroku.com:morning-eyrie-9355.git
+git add --all
+git commit -m 'init'
+git push heroku master
