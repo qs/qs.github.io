@@ -38,3 +38,13 @@ git remote add heroku git@heroku.com:morning-eyrie-9355.git
 git add --all
 git commit -m 'init'
 git push heroku master
+
+===Mongo
+heroku addons:add mongohq:sandbox
+heroku config| grep "MONGOHQ"
+
+
+
+http://habrahabr.ru/post/160191/
+https://github.com/MongoEngine/django-mongoengine
+http://stackoverflow.com/questions/22861077/django-auth-with-mongoengine-db
