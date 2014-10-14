@@ -59,6 +59,40 @@
 </ul>
 <p>Работающих актуальных гайдов на данный момент нет.</p>
 
+<p>Базовая установка с PostgreSQL:</p>
+
+<p>pip install django-toolbelt<br />
+django-admin.py startproject project .</p>
+
+<p>Конфиги:<br />
+echo "web: gunicorn project.wsgi --log-file -" &gt; Procfile<br />
+pip freeze &gt; requirements.txt</p>
+
+<p>vim .gitignore<br />
+venv</p>
+<ul>
+	<li>.pycstaticfiles</li>
+</ul>
+<p>vim wsgi.py<br />
+from django.core.wsgi import get_wsgi_application<br />
+from dj_static import Cling</p>
+
+<p>application = Cling(get_wsgi_application())</p>
+
+<p>git init<br />
+git remote add heroku git@heroku.com:morning-eyrie-9355.git<br />
+git add --all<br />
+git commit -m 'init'<br />
+git push heroku master</p>
+
+<h3>Mongo</h3>
+<p>heroku addons:add mongohq:sandbox<br />
+heroku config| grep "MONGOHQ"</p>
+
+<p><a href="http://habrahabr.ru/post/160191/">http://habrahabr.ru/post/160191/</a><br />
+<a href="https://github.com/MongoEngine/django-mongoengine">https://github.com/MongoEngine/django-mongoengine</a><br />
+<a href="http://stackoverflow.com/questions/22861077/django-auth-with-mongoengine-db">http://stackoverflow.com/questions/22861077/django-auth-with-mongoengine-db</a></p>
+
 
 tags:
 
@@ -86,8 +120,8 @@ tags:
 
     </div>
     <div class="col-md-3">
-      <p>Я занимаюсь разработкой на Python. <br />
-Интересуюсь анализом данных, процессом разработки, продуктивностью и веб-панком. <br />
+      <p>Я занимаюсь разработкой (преимущественно на Python). <br />
+Интересуюсь анализом данных, процессом разработки, продуктивностью. <br />
 Короче, как и многие, ищу способы жить лучше.
 </p>
 <hr />
