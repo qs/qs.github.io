@@ -1,0 +1,21 @@
+title: Побывал на Hadoop Kitchen
+tags: hadoop
+
+Интересное мероприятие, чуть лучше стал разбираться в вещах связанных с хадупом и альтернативах.
+
+* В Hadoop 2 ([[http://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/YARN.html|YARN]]) ноды распределяют между собой роли динамически: как если бы это была проектная работа с руководителем, который за всем следит. Вообще, чем дальше, тем все проще и казуальнее. Переезд с первой версии теоритически несложен, есть коммерческие реализации, позволяющие работать с обеими версиями хадупа.
+* Для прототипа или несложного приложения пойдет [[http://hadoop.apache.org/docs/r1.2.1/streaming.html|Hadoop Streaming]]. Позволяет писать приложения на чем угодно, используя stdin и stdout
+* Для изменяемых форматов данных лучше использовать Avro (сериализует в json) и писать к нему скрипты на чем угодно и/или Parquet (формат близкий к Protocol Buffers от Google) и писать на Java или C++.
+
+Интересные проекты и особенности:
+* Apache Solr - полнотекстовый поиск, динамическая кластеризация, есть JSON API
+* Apache Spark - для обработки данных, написан на Scala (как и Kafka), более быстрый мапредьюс; можно писать скрипты на Scala, Java, Python;  
+* Apache Storm - для вычислений в реальном времени, функциональность пересекается со Spark и Hadoop.
+* Apache Hive - позволяет писать запросы к HDFS на HiveQL (почти SQL)
+* Cloudera Impala - то же самое, но быстрее
+* Apache HBase - база данных семейство столбцов и синтаксис аналогичный SQL, очевидцы говорят, что сложна в эксплуатации.
+
+Попутно нашел интересным:
+* [[http://zenfractal.com/2013/08/21/a-powerful-big-data-trio/|A Powerful Big Data Trio: Spark, Parquet and Avro]]
+* [[https://spark.apache.org/docs/latest/programming-guide.html|Spark Programming Guide]]
+* [[http://habrahabr.ru/post/186208/|Изучаем Storm Framework. Часть I]]

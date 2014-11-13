@@ -1,0 +1,31 @@
+title: Материалы по анализу данных
+tags: data-mining
+
+Гайды и инструменты:
+* [[http://scikit-learn.org/stable/tutorial/basic/tutorial.html|scikit]] + [[http://www.liangeugene.com/wp-content/uploads/2013/06/drop_shadows_background.png|инструкция по выбору алгоритма]]. + пример рекомендательных систем: [[http://muricoca.github.io/crab/tutorial.html|Getting started: an introduction to recommender systems with Crab]].
+* [[http://guidetodatamining.com/|A Programmer's Guide to Data Mining]] - система ррекомендаций на питоне, bayes, k-means
+* [[http://help.mortardata.com/data_apps/recommendation_engine|Build a Recommendation Engine with Free, Open Technologies]] - система рекомендаций на MongoDB, Hadoop, Mortar (Ruby)
+* [[http://homepages.inf.ed.ac.uk/rbf/IAPR/researchers/MLPAGES/mltut.htm|Tutorials on topics in machine learning]] - на около 15 тем, есть еще ссылки на видео-уроки.
+* [[http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html|7 command-line tools for data science]]:
+** jq - sed for JSON
+** json2csv - convert JSON to CSV
+** csvkit - suite of utilities for converting to and working with CSV
+** scrape - HTML extraction using XPath or CSS selectors
+** xml2json - convert XML to JSON
+** Rio - making R part of the pipeline
++ [[http://www.gregreda.com/2013/07/15/unix-commands-for-data-science/|стандартные]]: head & tail, wc, grep, sed, sort & uniq, awk
+* [[http://onepager.togaware.com/|One Page R: A Survival Guide to Data Science with R ]] - статьи и руководства по R
+* [[http://togaware.com/datamining/survivor/Contents.html|Data Mining Desktop Survival Guide]] - там же, используют разный софт и R
+* [[http://gerardnico.com/wiki/data_mining/algorithm|Data Mining - Algorithms]] - статистика использования алгоритмов
+* [[http://www.kdnuggets.com/2014/05/guide-to-data-science-cheat-sheets.html|Guide to Data Science Cheat Sheets]] - статья на kdnuggets: Selection of the most useful Data Science cheat sheets, covering SQL, Python (including NumPy, SciPy and Pandas), R (including Regression, Time Series, Data Mining), MATLAB, and more. 
+
+Блоги:
+* [[http://playittodeath.ru/category/data-analysis-2/|playittodeath]] - один из разделов, на русском
+* [[http://www.scoop.it/t/pdg|Kun Le]] - machine learning / big data
+
+
+
+
+
+
+

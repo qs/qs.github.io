@@ -1,0 +1,20 @@
+title: Разбор ссылок по анализу данных
+tags: data-mining
+
+Интересные ссылки из дайджеста http://habrahabr.ru/post/226641/
+
+* [[http://www.datasciencecentral.com/profiles/blogs/data-science-summer-reading-list-2014|Книги по анализу данных]] - не про СПО пока мимо.
+** [[http://it-ebooks.info/book/3086/|Agile Data Science: Building Data Analytics Applications with Hadoop]] - всё agile, судя по содержанию простой уровень, помимо хадупа куча привычных свободных средств.
+** [[http://it-ebooks.info/book/666/|Machine Learning for Hackers]] - (book_id=666!) - R, спам-фильтр, priority box, прогноз просмотра страниц, рекомендации на kNN, рекомендации по социальному графу, SVM.
+** [[http://www.amazon.com/dp/1594205655|Social Physics: How Good Ideas Spread]] - должно быть интересно, не нашел pdf, и тут тоже название клевое: [[http://www.amazon.com/dp/B00DMCW3N0/|The Naked Future: What Happens in a World That Anticipates Your Every Move?]]
+** [[http://www.amazon.com/dp/1118810082|Developing Analytic Talent: Becoming a Data Scientist]] - судя по [[http://download.e-bookshelf.de/download/0002/3454/50/L-G-0002345450-0003216126.pdf|содержанию]] интересный гайд.
+** [[http://www.amazon.com/dp/3659517542|Anomaly detection technique for sequential data]] - тоже не нашел pdf.
+** [[http://it-ebooks.info/book/1041/|Python for Data Analysis]] - NumPy
+* [[http://www.kdnuggets.com/2014/06/huge-big-data-poster.html|Huge Big Data Poster and Reference]] - Свободные инструменты: визуализация: D3js, 3js, Gephi, Ozone; анализ: R, Mahout, Titan, OpenCV, Lumify, Hive, Pig, [[http://spark.apache.org/docs/latest/quick-start.html|Spark]]; хранение: HDFS, Accumulo, MongoDB, Cassandra, Titan, Neo4j, MySQL; подготовка (ingest): [[http://habrahabr.ru/post/128808/|Storm]], Hadoop/MapReduce; инфрастуктура: Linux, OpenShiW, OpenStack, Puppet, Zookeeper, Oozie, HDFS, KaZa, JBoss, Xymon (здесь почти ничего не знаю). 
+
+Еще списки ссылок: 
+* http://www.datasciencecentral.com/profiles/blogs/comprehensive-list-of-data-science-resources 
+* http://www.datasciencecentral.com/profiles/blogs/another-set-of-great-articles-and-resources-mostly-external
+
+
+

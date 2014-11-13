@@ -1,0 +1,55 @@
+title: Выделение сообществ по графу
+tags: kaggle, data mining
+
+Материалы по решению задачи на кеггл [[http://www.kaggle.com/c/learning-social-circles|Learning Social Circles in Networks]], в которой нужно распределить друзей пользователя по кругам.
+
+===Community detection in graphs===
+[[http://arxiv.org/pdf/0906.0612.pdf|pdf]]
+
+
+
+===Survey on Social Community Detection===
+[[http://hal.archives-ouvertes.fr/docs/00/80/42/34/PDF/Survey-on-Social-Community-Detection-V2.pdf|pdf]]
+
+Рассматриваются три подхода:
+* социальная сеть как граф
+* социальная сеть как [[https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%88%D1%91%D1%82%D0%BA%D0%B0_%28%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%29|решеток]] [[https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BF%D0%B5%D1%80%D0%B3%D1%80%D0%B0%D1%84|гиперграф]]
+* анализ с помощью [[http://www.machinelearning.ru/wiki/index.php?title=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%B8%D0%B9|формальных понятий]] (Galois Lattice) и гиперграфах
+
+====Определение сообщества====
+* группа узлов в сети, внутри которого узлы плотные, а между узлы разреженные
+* часть графа с небольшой связью со всей остальной системой - локальные группы
+
+====Подходы к определению сообществ====
+* традиционный подход - кластеризация k-means
+* дивизивные иерархические алгоритмы
+* модульные алгоритмы
+* спектральные алгоритмы
+* динамические алгоритмы
+* статистические основанные на интерфейсе
+* методы мультирешений
+* методы перекрывающих сообществ
+
+* [[http://arxiv.org/pdf/cond-mat/0305612v1.pdf|алгоритм Ньюмена]]
+* [[http://hal.elte.hu/cfinder/wiki/papers/communitylettm.pdf|k-Clique percolation method]]
+* [[http://arxiv.org/pdf/cond-mat/0309508v1.pdf|modularity optimization methods around the Newman algorithm]]
+* [[http://www.maths.tcd.ie/~mnl/store/PothenSimonLiou1990a.pdf|spectral partitioning methods around Simon’s algorithm]]
+* physics-based methods inspired by Potts law
+
+==== Girvan and Newman Algorithm ====
+Дивизивный алгоритм кластеризации. Суть - удаление ребер, которые принадлежат разным сообществам. Есть несколько мер определения, какие ребра являются центральными. Например, промежуточной центральности, где оценивается уровень важности ребра. Можно использовать количество наиболее коротких путей через ребро в качестве такой метрки. 
+# Вычислить центральность всех ребер
+# Удалить ребро с наибольшей центральностью
+# Пересчитать центральности
+# Перейти к шагу 2
+
+==== Modularity-based algorithm ====
+Предыдущий алгоритм, улучшеный за счет моудльности. "glutton" - тип алгоритма, который максимизирует модульность, сливая сообщества на каждом шаге, чтобы получить наибольшее значение. Разрешается объединять только те сообщества, у которых есть общие ребра. Качество алгоритма хуже, но сложность линейная.
+
+==== Louvain Algorithm ====
+Быстро работает на больших взвешенных графах. Не гарантирует оптимальное разбиение. Вначале все вершины находятся в одном сообществе. Для каждого узла i вычисляется выигрыш веса модульности при размещении рядом с узлом j, а затем выбирается наилучшее сообщество. Короче обычный агломеративный алгоритм.
+
+===Ссылки===
+* [[http://posp.raai.org/data/posp2011/kuznetsov.pdf|Решетки формальных понятий в современных методах анализа и разработки данных]] - презентация
+* [[https://pypi.python.org/pypi/concepts/0.5|concepts 0.5]] - Formal Concept Analysis with Python модуль
+* [[http://stackoverflow.com/questions/9658373/using-hypergraphs-in-pygraph-need-verification-that-example-is-correct|Using hypergraphs in pygraph]] - пример на stackoverflow

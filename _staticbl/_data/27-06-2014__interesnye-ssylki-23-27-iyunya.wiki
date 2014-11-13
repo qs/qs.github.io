@@ -1,8 +1,0 @@
-title: Интересные ссылки 23-27 июня
-tags: python
-date: 27-06-2014 22:01
-
-Интересные ссылки из Python Weekly - Issue 145
-* [[https://github.com/machinalis/iepy|Information Extraction framework in Python]] [[http://iepy.readthedocs.org/en/latest/tutorial.html|doc]] - извлекает факты из текста на английском в виде: "Albert Einstein HAD-PROFESSION patent clerk". Использует mongodb, scipy & numpy.
-* [[https://github.com/maebert/jrnl|jrnl]] - консольный ежедневник с шифрованием AES-256.
-* [[http://sebastianraschka.com/Articles/2014_multiprocessing_intro.html|multiprocessing]] - введение в мультипроцессинг, можно пользоваться Pool.apply_async и Pool.map_async.

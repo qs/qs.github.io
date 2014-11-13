@@ -1,0 +1,7 @@
+title: Интересные статьи на хабре
+tags: python, django, ci
+
+
+* [[http://habrahabr.ru/post/226465/|10 главных выводов, которые я сделал за Год Изучения Продуктивности]] - нужно выстраивать свою стратегию, знать цель, ради чего сейчас что-то делаешь, подвергать сомнению советы продуктивности, спать, есть, двигаться. Есть ссылки на интересные экперименты.
+* [[http://habrahabr.ru/post/226419/|Django на production. uWSGI + nginx. Подробное руководство]] + комментарии
+* [[http://habrahabr.ru/post/114745/|Непрерывное тестирование питонопроекта]] - с помощью [[http://jenkins-ci.org/|jenkins]], + (pyflakes, pep8,pylint, nosetests) + для джанги есть [[https://github.com/kmmbvnr/django-jenkins|django-jenkins]]
