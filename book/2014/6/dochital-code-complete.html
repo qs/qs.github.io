@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Дочитал Code Complete - (ツ).live</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="http://talkslab.github.io/metro-bootstrap/dist/css/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="http://talkslab.github.io/metro-bootstrap/styles/font-awesome.min.css">
+
+  <style>
+  
+  #wrapper {
+    padding-left: 250px;
+  }
+  #wrapper-container {
+    width: 100%;
+  }
+  #wrapper-container .container {
+    margin-left: inherit;
+  }
+  #wrapper.wrapper-full {
+    padding-left: 110px;
+  }
+  p {
+    text-align: justify;
+  }
+  </style>
+  </head>  
+  <body >
+  
+  <div id="wrapper">
+  <div class="navbar navbar-side navbar-inverse navbar-fixed-top" role="navigation">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">(ツ).live</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/"><i class="fa fa-1x fa-inbox"></i> <span>Заметки</span></a></li>
+            <li><a href="/guide.html"><i class="fa fa-1x fa-magic"></i> <span>Руководства</span></a></li>
+            <li><a href="/event.html"><i class="fa fa-1x fa-users"></i> <span>События</span></a></li>
+            <li class="active"><a href="/book.html"><i class="fa fa-1x fa-book"></i> <span>Книги</span></a></li>
+            <li><a href="/tag.html"><i class="fa fa-1x fa-tags"></i> <span>Теги</span></a></li>
+            <li><a href="/info.html"><i class="fa fa-1x fa-smile-o"></i> <span>Обо мне</span></a></li>
+          </ul>
+          <div class="navbar-side-options">
+            <a href="#" id="collapse-sidebar"><i class="fa fa-2x fa-bars"></i></a>
+          </div>
+        </div>
+    
+    </div>
+  <div id="wrapper-container">
+    <div class="container">
+
+      <div class="starter-template col-md-6">
+        
+<h2>Дочитал Code Complete</h2>
+<small>21-06-2014 05:25</small>
+
+<p>Дочитал "Совершенный код". Интересное начало (уровни проектирования, абстракции) и ближе к концу (тестирование, отладка, оценка, психология/философия программирования). Понравились статистики, юмор. Не понравились некоторые советы по написанию кода. Все ключевые моменты еще раз в общем повторены в последней главе.</p>
+
+<p>Особенно понравились эти идеи:</p>
+<ul>
+	<li>Нужно делать все проще, чтобы не держать кучу вещей в голове.</li>
+	<li>Разделить проектирование на уровни: от взаимодействия с ОС до готовых модулей и бизнес-логики программы в целом.</li>
+	<li>Кучу раз упоминается 80/20 и 7 объектов, которые можно держать в голове.</li>
+	<li>Нужно вводить побольше метрик для оценки прогресса проекта и оперативного выявления аномалий.</li>
+	<li>Комментарии должны быть такими, чтобы можно было читать алгоритм программы только по ним.</li>
+	<li>При этом комментарии должны быть на высоком уровне абстракции, говорить что и ради чего происходит, а не как.</li>
+	<li>Нужно общаться с другими людьми, перенимать и делиться опытом. (Эта же идея была в начале книжки по С/С++). Кодинг занимает около 13% от всего времени работы.</li>
+	<li>Парное программирование и код ревью сильно повышают качество, наравне с тестированием.</li>
+</ul>
+
+
+tags:
+
+	<a href="/tag/dev.html">dev</a> 
+
+	<a href="/tag/books.html">books</a> 
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'qsdev'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+      </div>
+
+    </div><!-- /.container -->
+  </div>
+  </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://talkslab.github.io/metro-bootstrap/scripts/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://talkslab.github.io/metro-bootstrap/scripts/metro-docs.js"></script>
+<script type="text/javascript">  
+  $('#collapse-sidebar').click(function()
+  {
+  
+  $('.navbar-side').toggleClass('navbar-side-closed');
+  $('#wrapper').toggleClass('wrapper-full');
+  });
+
+</script>
+
+  </body>
+</html>
