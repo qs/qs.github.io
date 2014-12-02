@@ -1,0 +1,14 @@
+title: Интересные заметки с хабра за последнее время
+tags: draft
+
+===Игры и медиа
+* [[http://habrahabr.ru/post/244265/|openFrameworks]] - клевая библиотека для программирования медиа-арта. [[http://openframeworks.cc/|оф.сайт]], [[https://github.com/nemilya/of_volfworks_example|пример]]. Есть [[http://www.ofxaddons.com/|кучка плагинов]].
+* [[http://habrahabr.ru/post/244417/|Разработка игры в 115 кб]] - OpenGL + Free Pascal, классно вышло.
+
+===Разработка
+* [[http://habrahabr.ru/post/244247/|Документирование процесса разработки]] - интересная статья. Интересный, хоть и платный инструмент: [[http://www.sparxsystems.com.au/products/ea/index.html|Enterprise Architect]] - для UML, есть реверсженеринг кучи языков, в том числе Python.
+
+===Обучение
+* [[http://eggheado.com/courses/|Eggheado]] - курсы по email, каждый день присылают материал, просто и круто.
+* [[http://habrahabr.ru/company/mbaconsult/blog/244049/|Как создать свой первый электронный курс]] - с помощью WordPress CoursePress.
+* [[http://habrahabr.ru/company/npl/blog/244539/|Адаптивное обучение, или несколько слов о Knewton]] - интересный подход: создание своей образовательной траектории.
